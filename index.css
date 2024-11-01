@@ -1,0 +1,203 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    -webkit-user-drag: none;
+}
+
+:root{
+    /* Primary */ 
+    --red-top: hsl(0, 78%, 62%);
+    --cyan-top: hsl(180, 62%, 55%);
+    --orange-top: hsl(34, 97%, 64%);
+    --blue-top: hsl(212, 86%, 64%);
+    
+    /* Neutral */ 
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --font-size: 15px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--very-light-gray);
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Container */
+.container{
+    max-width: 1500px;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* Container Header*/
+.container header{
+    text-align: center;
+    margin: auto;
+    width: 700px;
+}
+
+.container .header h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+
+
+.container .header-description{
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--Grayish-Blue);
+}
+
+.container .header-description-two{
+    font-weight: 100;
+    font-style: normal;
+    color: var(--Grayish-Blue);
+}
+
+.container .card-container .col .card{
+    width: 400px;
+    height: 280px;
+    margin: 20px;
+    background: var(--very-light-gray);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.container .card-container .col p{
+    font-family: sans-serif;
+}
+
+.container .card-container .col .card:hover{
+    transform: scale(1.05);
+}
+
+.container .card-container .col .card .card-content{
+    width: 22em;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+.container .card-container .col .card .card-content .card-image{
+    display: flex;
+    left: 280px;
+    position: relative;
+    right: auto;
+    top: 60px;
+}
+
+.container .card-container .col .card .card-content h4{
+    color: var(--very-dark-blue);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.container .card-container .col .card .card-content p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 30px;
+}
+
+
+/* Media Queries */
+@media screen and (min-width:740px) {
+    .container .card-container{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .container .card-container .col{
+        flex-basis: 20%;
+    }
+    .container .card-container .col .team-card{
+        border-top: 4px solid var(--red-top);
+    }
+    .container .card-container .col .supervisor-card{
+        border-top: 4px solid var(--cyan-top);
+    }
+    .container .card-container .col .karma-card{
+        border-top: 4px solid var(--orange-top);
+    }
+    .container .card-container .col .calc-card{
+        border-top: 4px solid var(--blue-top);
+    }
+}
+
+@media screen and (max-width:730px) {
+    .container header{
+        text-align: center;
+        margin: auto;
+        width: 500px;
+    }
+    .container .card-container{
+        position: relative;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .container .card-container .col .team-card{
+        border-top: 4px solid var(--red-top);
+    }
+    .container .card-container .col .supervisor-card{
+        border-top: 4px solid var(--cyan-top);
+    }
+    .container .card-container .col .karma-card{
+        border-top: 4px solid var(--orange-top);
+    }
+    .container .card-container .col .calc-card{
+        border-top: 4px solid var(--blue-top);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+
+    }
+
+    .container header{
+        text-align: center;
+        margin: auto;
+        width: 500px;
+    }
+    .container .card-container{
+        position: relative;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .container .card-container .col .team-card{
+        border-top: 4px solid var(--red-top);
+    }
+    .container .card-container .col .supervisor-card{
+        border-top: 4px solid var(--cyan-top);
+    }
+    .container .card-container .col .karma-card{
+        border-top: 4px solid var(--orange-top);
+    }
+    .container .card-container .col .calc-card{
+        border-top: 4px solid var(--blue-top);
+    }
+}
